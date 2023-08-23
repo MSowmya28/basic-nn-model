@@ -45,8 +45,8 @@ Evaluate the model with the testing data.
 
 ## PROGRAM
 ~~~
-DEVELOPED BY:V.A.JITHENDRA
-REG.NO:212221230043
+DEVELOPED BY:M.SOWMYA
+REG.NO:212221230107
 ~~~
 ~~~
 import pandas as pd
@@ -60,7 +60,7 @@ from google.auth import default
 auth.authenticate_user()
 creds, _ = default()
 gc = gspread.authorize(creds)
-worksheet = gc.open('ex1').sheet1
+worksheet = gc.open('EX1').sheet1
 data = worksheet.get_all_values()
 dataset1=pd.DataFrame(data[1:],columns=data[0])
 dataset1=dataset1.astype({'input':'float'})
